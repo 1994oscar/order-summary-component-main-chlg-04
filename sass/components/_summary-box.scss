@@ -1,0 +1,88 @@
+.summary-box{
+    //@include card;
+    display: flex;
+    flex-direction: column;
+
+    &-header{
+        max-width: 100%;
+        height: auto;
+
+        &__image{
+            max-width: 100%;
+            height: auto; 
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;     
+        }
+    }
+
+    &-body{
+        align-self: center;
+        width: 20rem;
+        &__title{
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 900;
+            color: $dark-blue;
+        }
+
+        &__description{
+            text-align: center;
+            color: $desaturated-blue;
+            //padding: 0 2.5rem;
+        }
+
+        &-plan{
+            height: 6rem;
+            background-color: $very-pale-blue;
+            display: flex;
+            align-items: center;
+            padding: 0 1rem;
+            border-radius: 1rem;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        
+            &__icon{
+                height: 2.5rem;
+                width: 2.5rem;
+                margin-right: 1rem;
+            }
+
+            &__description{
+                margin-right: 4rem;
+
+                >h4{
+                    margin: 0;
+                    margin-bottom: .3rem;
+                    color: $dark-blue;
+                    font-weight: 900;
+                    font-size:1.1rem;
+                    text-align: center;
+                }
+
+                >span{
+                    color:$desaturated-blue;
+                    font-weight: 700;
+                    text-align: center;
+                    font-size: 1.1rem;
+                }
+            }
+
+            &__btn-change{
+                font-weight: 900;
+                font-size: .9rem;
+            }
+        }
+    }
+
+    &-footer{
+        align-self: center;
+        width: 20rem;
+        display: flex;
+        flex-direction: column;
+
+        > .btn:last-child{
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+        }
+    }
+}

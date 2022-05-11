@@ -1,0 +1,124 @@
+/*Colors*/
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+*,
+*after,
+*before {
+  box-sizing: inherit;
+  margin: 0;
+  left: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+  height: 100vh;
+  max-width: 100%; }
+
+footer {
+  max-width: 100%; }
+
+.container {
+  height: 100%;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.attribution {
+  max-width: 100%;
+  text-align: center;
+  padding: 5rem 2rem;
+  color: #1f2f56; }
+  .attribution > a {
+    text-decoration: none;
+    color: #3829e0; }
+
+.btn {
+  border: none;
+  height: 3.5rem; }
+  .btn--primary {
+    z-index: 1;
+    background-color: #3829e0;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f5f7ff;
+    border-radius: .8rem;
+    max-width: 100%;
+    box-shadow: -1px 15px 11px -1px rgba(122, 122, 122, 0.29);
+    -webkit-box-shadow: -1px 15px 11px -1px rgba(122, 122, 122, 0.29);
+    -moz-box-shadow: -1px 15px 11px -1px rgba(122, 122, 122, 0.29); }
+  .btn--secondary {
+    background-color: white;
+    color: #7280a7;
+    font-weight: 700;
+    font-size: 1.1rem; }
+
+.card {
+  box-shadow: -1px 11px 11px -1px rgba(122, 122, 122, 0.22);
+  -webkit-box-shadow: -1px 11px 11px -1px rgba(122, 122, 122, 0.22);
+  -moz-box-shadow: -1px 11px 11px -1px rgba(122, 122, 122, 0.22);
+  width: 25rem;
+  border-radius: 1rem; }
+
+.summary-box {
+  display: flex;
+  flex-direction: column; }
+  .summary-box-header {
+    max-width: 100%;
+    height: auto; }
+    .summary-box-header__image {
+      max-width: 100%;
+      height: auto;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem; }
+  .summary-box-body {
+    align-self: center;
+    width: 20rem; }
+    .summary-box-body__title {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: #1f2f56; }
+    .summary-box-body__description {
+      text-align: center;
+      color: #7280a7; }
+    .summary-box-body-plan {
+      height: 6rem;
+      background-color: #f5f7ff;
+      display: flex;
+      align-items: center;
+      padding: 0 1rem;
+      border-radius: 1rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem; }
+      .summary-box-body-plan__icon {
+        height: 2.5rem;
+        width: 2.5rem;
+        margin-right: 1rem; }
+      .summary-box-body-plan__description {
+        margin-right: 4rem; }
+        .summary-box-body-plan__description > h4 {
+          margin: 0;
+          margin-bottom: .3rem;
+          color: #1f2f56;
+          font-weight: 900;
+          font-size: 1.1rem;
+          text-align: center; }
+        .summary-box-body-plan__description > span {
+          color: #7280a7;
+          font-weight: 700;
+          text-align: center;
+          font-size: 1.1rem; }
+      .summary-box-body-plan__btn-change {
+        font-weight: 900;
+        font-size: .9rem; }
+  .summary-box-footer {
+    align-self: center;
+    width: 20rem;
+    display: flex;
+    flex-direction: column; }
+    .summary-box-footer > .btn:last-child {
+      margin-top: 1rem;
+      margin-bottom: 3rem; }
