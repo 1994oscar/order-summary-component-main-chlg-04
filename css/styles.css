@@ -43,12 +43,9 @@ footer {
   .attribution > a {
     text-decoration: none;
     color: #3829e0; }
-  @media screen and (min-width: 300px) and (max-width: 400px) {
+  @media screen and (min-width: 300px) {
     .attribution {
       font-size: 1.5rem; } }
-  @media screen and (min-width: 400px) and (max-width: 500px) {
-    .attribution {
-      font-size: 1.6rem; } }
 
 .btn {
   border: none;
@@ -70,6 +67,9 @@ footer {
     @media screen and (min-width: 400px) and (max-width: 500px) {
       .btn--primary {
         font-size: 1.6rem; } }
+    @media screen and (min-width: 700px) {
+      .btn--primary {
+        font-size: 1.6rem; } }
   .btn--secondary {
     background-color: white;
     color: #7280a7;
@@ -81,12 +81,12 @@ footer {
     @media screen and (min-width: 400px) and (max-width: 500px) {
       .btn--secondary {
         font-size: 1.5rem; } }
-  @media screen and (min-width: 300px) and (max-width: 400px) {
+    @media screen and (min-width: 700px) {
+      .btn--secondary {
+        font-size: 1.5rem; } }
+  @media screen and (min-width: 300px) {
     .btn {
-      height: 5rem; } }
-  @media screen and (min-width: 400px) and (max-width: 500px) {
-    .btn {
-      height: 6rem;
+      height: 5rem;
       border-radius: 1rem; } }
 
 .card {
@@ -100,10 +100,18 @@ footer {
     .card {
       width: 32rem;
       border-radius: 2rem; } }
-  @media screen and (min-width: 400px) and (max-width: 500px) {
+  @media screen and (min-width: 400px) {
     .card {
-      width: 35.5rem;
       border-radius: 2.5rem; } }
+  @media screen and (min-width: 400px) and (max-width: 700px) {
+    .card {
+      width: 35.5rem; } }
+  @media screen and (min-width: 700px) and (max-width: 1400px) {
+    .card {
+      width: 38rem; } }
+  @media screen and (min-width: 1440px) {
+    .card {
+      width: 45rem; } }
 
 .summary-box {
   display: flex;
@@ -116,11 +124,11 @@ footer {
       height: auto;
       border-top-left-radius: 1rem;
       border-top-right-radius: 1rem; }
-      @media screen and (min-width: 300px) and (max-width: 400px) {
+      @media screen and (min-width: 300px) and (max-width: 1400px) {
         .summary-box-header__image {
           border-top-left-radius: 2rem;
           border-top-right-radius: 2rem; } }
-      @media screen and (min-width: 400px) and (max-width: 500px) {
+      @media screen and (min-width: 1440px) {
         .summary-box-header__image {
           border-top-left-radius: 2.5rem;
           border-top-right-radius: 2.5rem; } }
@@ -136,10 +144,18 @@ footer {
         .summary-box-body__title {
           margin-top: 2.5rem;
           font-size: 2.35rem; } }
-      @media screen and (min-width: 400px) and (max-width: 500px) {
+      @media screen and (min-width: 400px) and (max-width: 700px) {
         .summary-box-body__title {
           margin-top: 2.5rem;
           font-size: 2.50rem; } }
+      @media screen and (min-width: 700px) and (max-width: 1400px) {
+        .summary-box-body__title {
+          margin-top: 2.5rem;
+          font-size: 2.52rem; } }
+      @media screen and (min-width: 1440px) {
+        .summary-box-body__title {
+          margin-top: 5.4rem;
+          font-size: 3rem; } }
     .summary-box-body__description {
       text-align: center;
       color: #7280a7;
@@ -149,7 +165,7 @@ footer {
           font-size: 1.4rem;
           line-height: 2.3rem;
           padding: 0 2.51rem; } }
-      @media screen and (min-width: 400px) and (max-width: 500px) {
+      @media screen and (min-width: 400px) {
         .summary-box-body__description {
           font-size: 1.6rem;
           line-height: 2.5rem;
@@ -172,10 +188,20 @@ footer {
             height: 5rem;
             width: 5rem;
             margin-right: 1.5rem; } }
-        @media screen and (min-width: 400px) and (max-width: 500px) {
+        @media screen and (min-width: 400px) and (max-width: 700px) {
           .summary-box-body-plan__icon {
-            height: 6rem;
-            width: 6rem;
+            height: 4rem;
+            width: 4rem;
+            margin-right: 2rem; } }
+        @media screen and (min-width: 700px) and (max-width: 1400px) {
+          .summary-box-body-plan__icon {
+            height: 4.3rem;
+            width: 4.3rem;
+            margin-right: 2rem; } }
+        @media screen and (min-width: 1440px) {
+          .summary-box-body-plan__icon {
+            height: 4.7rem;
+            width: 4.7rem;
             margin-right: 2rem; } }
       .summary-box-body-plan__description {
         margin-right: 4rem; }
@@ -189,7 +215,7 @@ footer {
           @media screen and (min-width: 300px) and (max-width: 400px) {
             .summary-box-body-plan__description > h4 {
               font-size: 1.5rem; } }
-          @media screen and (min-width: 400px) and (max-width: 500px) {
+          @media screen and (min-width: 400px) {
             .summary-box-body-plan__description > h4 {
               font-size: 1.7rem; } }
         .summary-box-body-plan__description > span {
@@ -200,15 +226,21 @@ footer {
           @media screen and (min-width: 300px) and (max-width: 400px) {
             .summary-box-body-plan__description > span {
               font-size: 1.5rem; } }
-          @media screen and (min-width: 400px) and (max-width: 500px) {
+          @media screen and (min-width: 400px) {
             .summary-box-body-plan__description > span {
               font-size: 1.7rem; } }
         @media screen and (min-width: 300px) and (max-width: 400px) {
           .summary-box-body-plan__description {
             width: 10rem; } }
-        @media screen and (min-width: 400px) and (max-width: 500px) {
+        @media screen and (min-width: 400px) and (max-width: 700px) {
           .summary-box-body-plan__description {
             width: 10.5rem; } }
+        @media screen and (min-width: 700px) and (max-width: 1400px) {
+          .summary-box-body-plan__description {
+            width: 14rem; } }
+        @media screen and (min-width: 1440px) {
+          .summary-box-body-plan__description {
+            width: 15rem; } }
       .summary-box-body-plan__btn-change {
         font-weight: 900;
         font-size: .9rem;
@@ -216,27 +248,52 @@ footer {
         @media screen and (min-width: 300px) and (max-width: 400px) {
           .summary-box-body-plan__btn-change {
             font-size: 1.2rem; } }
-        @media screen and (min-width: 400px) and (max-width: 500px) {
+        @media screen and (min-width: 400px) and (max-width: 700px) {
           .summary-box-body-plan__btn-change {
             font-size: 1.3rem; } }
+        @media screen and (min-width: 700px) and (max-width: 1400px) {
+          .summary-box-body-plan__btn-change {
+            font-size: 1.35rem; } }
+        @media screen and (min-width: 1440px) {
+          .summary-box-body-plan__btn-change {
+            font-size: 1.4rem; } }
       @media screen and (min-width: 300px) and (max-width: 400px) {
         .summary-box-body-plan {
           margin-top: 3rem;
           margin-bottom: 3rem;
           height: 8rem;
           border-radius: 1.2rem; } }
-      @media screen and (min-width: 400px) and (max-width: 500px) {
+      @media screen and (min-width: 400px) and (max-width: 700px) {
         .summary-box-body-plan {
           margin-top: 3rem;
           margin-bottom: 3rem;
           height: 9rem;
           border-radius: 1.2rem; } }
+      @media screen and (min-width: 700px) and (max-width: 1400px) {
+        .summary-box-body-plan {
+          margin-top: 3rem;
+          margin-bottom: 3rem;
+          height: 9.5rem;
+          border-radius: 1.3rem; } }
+      @media screen and (min-width: 1440px) {
+        .summary-box-body-plan {
+          margin-top: 3.4rem;
+          margin-bottom: 3.4rem;
+          height: 10rem;
+          border-radius: 1.4rem;
+          padding: 0 2rem; } }
     @media screen and (min-width: 300px) and (max-width: 400px) {
       .summary-box-body {
         width: 28rem; } }
-    @media screen and (min-width: 400px) and (max-width: 500px) {
+    @media screen and (min-width: 400px) and (max-width: 700px) {
       .summary-box-body {
         width: 30rem; } }
+    @media screen and (min-width: 700px) and (max-width: 1400px) {
+      .summary-box-body {
+        width: 33rem; } }
+    @media screen and (min-width: 1440px) {
+      .summary-box-body {
+        width: 35.5rem; } }
   .summary-box-footer {
     align-self: center;
     width: 20rem;
@@ -245,17 +302,23 @@ footer {
     .summary-box-footer > .btn:last-child {
       margin-top: 1rem;
       margin-bottom: 3rem; }
-      @media screen and (min-width: 300px) and (max-width: 400px) {
+      @media screen and (min-width: 300px) and (max-width: 500px) {
         .summary-box-footer > .btn:last-child {
           margin-top: .5rem;
           margin-bottom: 2rem; } }
-      @media screen and (min-width: 400px) and (max-width: 500px) {
+      @media screen and (min-width: 500px) {
         .summary-box-footer > .btn:last-child {
           margin-top: .5rem;
-          margin-bottom: 2rem; } }
+          margin-bottom: 5rem; } }
     @media screen and (min-width: 300px) and (max-width: 400px) {
       .summary-box-footer {
         width: 28rem; } }
-    @media screen and (min-width: 400px) and (max-width: 500px) {
+    @media screen and (min-width: 400px) and (max-width: 700px) {
       .summary-box-footer {
         width: 30rem; } }
+    @media screen and (min-width: 700px) and (max-width: 1400px) {
+      .summary-box-footer {
+        width: 33rem; } }
+    @media screen and (min-width: 1440px) {
+      .summary-box-footer {
+        width: 35.5rem; } }

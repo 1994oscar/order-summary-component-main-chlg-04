@@ -11,8 +11,19 @@
         border-radius: 2rem;
     } 
 
-    @include media-min-max-query(400px, 500px){
-        width: 35.5rem;
-        border-radius: 2.5rem;
+    @include media-min(400px){
+        border-radius: 2.5rem; 
+    }
+
+    @include media-min-max-query(400px, 700px){
+        width: 35.5rem;    
+    }
+
+    @include media-min-max-query(700px, 1400px){
+        width: 38rem;    
+    }
+    
+    @include media-min(1440px){
+        width: 45rem;      
     } 
 }
