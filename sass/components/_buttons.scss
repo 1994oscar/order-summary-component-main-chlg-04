@@ -18,11 +18,11 @@
         &:hover{
             cursor: pointer;
             background-color: $active;
+            transition: all 200ms;
         }
     
         @include media-min-max-query(300px, 400px){
-            font-size: 1.5rem;
-            //letter-spacing: .1rem;
+            font-size: 1.5rem;          
         }
 
         @include media-min-max-query(400px, 500px){
@@ -43,6 +43,7 @@
         &:hover{
             cursor: pointer;
             color: $dark-blue;
+            transition: all 200ms;
         }
 
         @include media-min-max-query(300px, 400px){
