@@ -1,5 +1,4 @@
 .summary-box{
-    //@include card;
     display: flex;
     flex-direction: column;
 
@@ -11,24 +10,40 @@
             max-width: 100%;
             height: auto; 
             border-top-left-radius: 1rem;
-            border-top-right-radius: 1rem;     
+            border-top-right-radius: 1rem;
+            
+            @include media-min-max-query(300px, 400px){
+                border-top-left-radius: 2rem;
+                border-top-right-radius: 2rem;
+            }
         }
     }
 
     &-body{
         align-self: center;
         width: 20rem;
+
         &__title{
             text-align: center;
             font-size: 1.5rem;
             font-weight: 900;
             color: $dark-blue;
+
+            @include media-min-max-query(300px, 400px){
+                margin-top: 2.5rem;
+                font-size: 2.35rem;
+            }
         }
 
         &__description{
             text-align: center;
             color: $desaturated-blue;
             //padding: 0 2.5rem;
+            @include media-min-max-query(300px, 400px){
+                font-size: 1.4rem;
+                line-height: 2.3rem;
+                padding: 0 2.51rem;
+            }
         }
 
         &-plan{
@@ -45,6 +60,12 @@
                 height: 2.5rem;
                 width: 2.5rem;
                 margin-right: 1rem;
+
+                @include media-min-max-query(300px, 400px){
+                    height: 5rem;
+                    width: 5rem;
+                    margin-right: 1.5rem;
+                }
             }
 
             &__description{
@@ -56,21 +77,48 @@
                     color: $dark-blue;
                     font-weight: 900;
                     font-size:1.1rem;
-                    text-align: center;
+                    text-align: left;
+
+                    @include media-min-max-query(300px, 400px){
+                        font-size:1.5rem;
+                    }
                 }
 
                 >span{
                     color:$desaturated-blue;
                     font-weight: 700;
-                    text-align: center;
+                    text-align: left;
                     font-size: 1.1rem;
+
+                    @include media-min-max-query(300px, 400px){
+                        font-size:1.5rem;
+                    }
+                }
+
+                @include media-min-max-query(300px, 400px){
+                    //margin-right: 9rem;
+                    width: 10rem;
                 }
             }
 
             &__btn-change{
                 font-weight: 900;
                 font-size: .9rem;
+
+                @include media-min-max-query(300px, 400px){
+                    font-size:1.2rem;
+                }
             }
+
+            @include media-min-max-query(300px, 400px){
+                margin-top: 3rem;
+                margin-bottom: 3rem;
+                height: 8rem;
+            }
+        }
+
+        @include media-min-max-query(300px, 400px){
+            width: 28rem;
         }
     }
 
@@ -83,6 +131,14 @@
         > .btn:last-child{
             margin-top: 1rem;
             margin-bottom: 3rem;
+            @include media-min-max-query(300px, 400px){
+                margin-top: .5rem;
+                margin-bottom: 2rem;
+            }
+        }
+
+        @include media-min-max-query(300px, 400px){
+            width: 28rem;
         }
     }
 }

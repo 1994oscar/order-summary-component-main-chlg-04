@@ -1,7 +1,13 @@
 .card{
-    box-shadow: -1px 11px 11px -1px rgba(122,122,122,0.22);
-    -webkit-box-shadow: -1px 11px 11px -1px rgba(122,122,122,0.22);
-    -moz-box-shadow: -1px 11px 11px -1px rgba(122,122,122,0.22);
+    background-color: $white;
+    box-shadow: -1px 11px 20px -1px rgba(56,42,255,0.2);
+    -webkit-box-shadow: -1px 11px 20px -1px rgba(56,42,255,0.1);
+    -moz-box-shadow: -1px 11px 20px -1px rgba(56,42,255,0.22);
     width: 25rem;
     border-radius: 1rem;
+
+    @include media-min-max-query(300px, 400px){
+        width: 32rem;
+        border-radius: 2rem;
+    }
 }
