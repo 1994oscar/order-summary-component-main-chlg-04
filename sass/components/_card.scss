@@ -9,5 +9,10 @@
     @include media-min-max-query(300px, 400px){
         width: 32rem;
         border-radius: 2rem;
-    }
+    } 
+
+    @include media-min-max-query(400px, 500px){
+        width: 35.5rem;
+        border-radius: 2.5rem;
+    } 
 }
