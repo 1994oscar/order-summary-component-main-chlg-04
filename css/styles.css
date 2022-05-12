@@ -211,7 +211,7 @@ footer {
             margin-right: 2rem; } }
       .summary-box-body-plan__description {
         margin-right: 4rem; }
-        .summary-box-body-plan__description > h4 {
+        .summary-box-body-plan__description > h2 {
           margin: 0;
           margin-bottom: .3rem;
           color: #1f2f56;
@@ -219,10 +219,10 @@ footer {
           font-size: 1.1rem;
           text-align: left; }
           @media screen and (min-width: 300px) and (max-width: 400px) {
-            .summary-box-body-plan__description > h4 {
+            .summary-box-body-plan__description > h2 {
               font-size: 1.5rem; } }
           @media screen and (min-width: 400px) {
-            .summary-box-body-plan__description > h4 {
+            .summary-box-body-plan__description > h2 {
               font-size: 1.7rem; } }
         .summary-box-body-plan__description > span {
           color: #7280a7;
